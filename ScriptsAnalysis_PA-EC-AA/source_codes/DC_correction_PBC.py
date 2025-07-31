@@ -1,3 +1,5 @@
+# Adapted from code originally shared by Stepan Timr (with permission)
+
 import numpy as np
 
 def total_mass(file):
