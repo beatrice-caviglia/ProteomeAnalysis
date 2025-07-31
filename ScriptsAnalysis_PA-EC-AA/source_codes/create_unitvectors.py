@@ -1,3 +1,5 @@
+# Adapted from code originally shared by Stepan Timr (with permission)
+
 # Load modules 
 import numpy as np 
 import MDAnalysis as mda
