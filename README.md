@@ -16,5 +16,3 @@ The Analysis scripts can be tested with the published data available at the foll
 Scripts are provided as Jupyter Notebooks or .py files.  
 Adjust paths in scripts according to downloading path. Further details on scripts are provided in the Scripts_Analysis_PA_EC_AA folder.   
 A tutorial for the Proteome Class is under construction and will be made available as soon as possible.  
-
-### Copyright
