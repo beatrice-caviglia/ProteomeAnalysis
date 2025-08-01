@@ -34,19 +34,19 @@ Additional analysis tools are provided in the 'source_codes' folder. These inclu
 - Optimization of weighted global diffusion coefficients to fit experimental data
 
 ### Operating System tested:
-Linux (Ubuntu)
+Linux (Ubuntu)  
 Windows 11 (except for code that required multiprocessing, e.g.: Codes 1) and 3).)
 
 ### Software Dependencies:
-Python: 3.12.1
-Jupyter Notebook: 7.0.8
-MDAnalysis: 2.7.0
-numpy: 1.26.4
-pandas: 2.2.1
-matplotlib: 3.8.0
-scipy: 1.12.0
-lmfit: 1.2.2
-networkx: 3.4.2
-tqdm: 4.65.0
+Python: 3.12.1  
+Jupyter Notebook: 7.0.8  
+MDAnalysis: 2.7.0  
+numpy: 1.26.4  
+pandas: 2.2.1  
+matplotlib: 3.8.0   
+scipy: 1.12.0  
+lmfit: 1.2.2  
+networkx: 3.4.2  
+tqdm: 4.65.0  
 
 
