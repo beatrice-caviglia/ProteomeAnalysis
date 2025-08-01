@@ -9,6 +9,7 @@ This folder contains the main Python and Jupyter Notebook scripts (.py and .ipyn
      - Translational and rotational diffusion coefficients (computed with scripts: create_unit_vectors.py, compute_dr.py, compute_msd.py)
      - Radial distribution function
      - Folders containing: TPR file, Chain indices file (txt file with the indeces of each chain in the system), Temperatures
+Expected Runtime: ~30 min.
 
 2) 02_Translational-diffusion-blockwise.ipynb
    - Performs a blockwise analysis of translational diffusion coefficients for proteins within the simulation.
@@ -16,6 +17,7 @@ This folder contains the main Python and Jupyter Notebook scripts (.py and .ipyn
      - Trajectory files (.xtc)
      - Protein index file (file containing index ranges of proteins)
      - TPR file
+Expected Runtime: ~10 min.
 
 3) 03_RunContacts.ipynb
    - Computes inter-protein contacts of proteins during a simulation.
@@ -25,6 +27,7 @@ This folder contains the main Python and Jupyter Notebook scripts (.py and .ipyn
      - TPR file
     - Note: This code is computationally expensive and runs parallel with multiprocessing. A high skipping rate of frames can be 
       selected to run this faster.
+Expected Runtime: ~ 2h
 
 Additional analysis tools are provided in the 'source_codes' folder. These include:
 - Scripts to create unit vectors, compute rotational diffusion coefficients, compute translational diffusion coefficients over whole trajectory
