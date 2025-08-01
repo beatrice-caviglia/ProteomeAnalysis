@@ -34,7 +34,7 @@ Additional analysis tools are provided in the 'source_codes' folder. These inclu
 - Optimization of weighted global diffusion coefficients to fit experimental data
 
 ### Operating System tested:
-Linux (Ubuntu)  
+Ubuntu 20.04.5 LTS  
 Windows 11 (except for code that required multiprocessing, e.g.: Codes 1) and 3).)
 
 ### Software Dependencies:
