@@ -1,17 +1,19 @@
-### OVERVIEW:
-This folder contains the main Python and Jupyter Notebook scripts (.py and .ipynb) used in the article: "Cytoplasmic Fluidity and the Cold Life: Proteome Stability is Decoupled from Viability in Psychrophiles". 
+#### OVERVIEW:
+This folder contains the main Python and Jupyter Notebook scripts (.py and .ipynb) used in the article: 
+> *"Cytoplasmic Fluidity and the Cold Life: Proteome Stability is Decoupled from Viability in Psychrophiles" (2025)*
 
-### SCRIPTS AND FUNCTIONS:
 
-1) 01_Evaluate-global-diffusion.ipynb:
-   - Computes the global diffusion of protein chains using translational/rotational diffusion coefficients, and radial distribution functions.
+#### SCRIPTS AND FUNCTIONS:
+
+(i) `01_Evaluate-global-diffusion.ipynb`:
+   - Computes the global diffusion of protein chains using translational/rotational diffusion coefficients, and radial distribution functions. 
    - Inputs:
      - Translational and rotational diffusion coefficients (computed with scripts: create_unit_vectors.py, compute_dr.py, compute_msd.py)
-     - Radial distribution function
+     - Radial distribution function (GROMACS: gmx rdf)
      - Folders containing: TPR file, Chain indices file (txt file with the indeces of each chain in the system), Temperatures
 Expected Runtime: ~30 min.
 
-2) 02_Translational-diffusion-blockwise.ipynb
+(ii) `02_Translational-diffusion-blockwise.ipynb`:
    - Performs a blockwise analysis of translational diffusion coefficients for proteins within the simulation.
    - Inputs:
      - Trajectory files (.xtc)
@@ -19,7 +21,7 @@ Expected Runtime: ~30 min.
      - TPR file
 Expected Runtime: ~10 min.
 
-3) 03_RunContacts.ipynb
+(iii) `03_RunContacts.ipynb`:
    - Computes inter-protein contacts of proteins during a simulation.
    - Inputs:
      - Trajectory files (.xtc)
@@ -34,11 +36,11 @@ Additional analysis tools are provided in the 'source_codes' folder. These inclu
 - Utilities for correcting diffusion coefficients for periodic boundary conditions (PBC)
 - Optimization of weighted global diffusion coefficients to fit experimental data
 
-### Operating System tested:
+#### Operating System tested:
 Ubuntu 20.04.5 LTS  
 Windows 11 (except for code that required multiprocessing, e.g.: Codes 1) and 3).)
 
-### Software Dependencies:
+#### Software Dependencies:
 Python: 3.12.1  
 Jupyter Notebook: 7.0.8  
 MDAnalysis: 2.7.0  
@@ -50,12 +52,14 @@ lmfit: 1.2.2
 networkx: 3.4.2  
 tqdm: 4.65.0  
 
-### Demo:
+#### Demo:
 The scripts can be tested with available data on Zenodo:   
 https://zenodo.org/records/16603402  
 https://zenodo.org/records/16600218  
 https://zenodo.org/records/16605838  
 Note: Adjust the paths in the scripts according to the downloading path and the System. The first link includes specific examples for runnning specific codes.
+
+
 
 
 
