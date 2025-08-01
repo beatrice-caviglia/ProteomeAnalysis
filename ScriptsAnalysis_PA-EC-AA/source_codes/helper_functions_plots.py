@@ -141,6 +141,15 @@ def compute_experimental_au(data, err, all_temp, xfit, fit, fit_err, T0, Dt,
 
     return au
 
+def D_combine_FF_unF(Tmps, D_curr, D_curr_err, D_unF, D_unF_err, au):
+    # Created weigted Dg of Df and Dunf
+    D_weighted = np.zeros(len(Tmps))
+    D_weighted_err = np.zeros(len(Tmps))
+    for (j, t) in enumerate(Tmps):
+        D_weighted[j] = D_curr[j]*(1-au(t)) + D_unF[j]*(au(t))
+        D_weighted_err[j] = np.sqrt((D_curr_err[j]*(1-au(t)))**2 + (D_unF_err[j]*(au(t)))**2)
+    return D_weighted, D_weighted_err
+
 
 def theta(x):
     return 1/(1 + np.e**(-x))
