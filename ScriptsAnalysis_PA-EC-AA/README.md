@@ -3,7 +3,8 @@ This folder contains the main Python and Jupyter Notebook scripts (.py and .ipyn
 > *"Cytoplasmic Fluidity and the Cold Life: Proteome Stability is Decoupled from Viability in Psychrophiles" (2025)*
 
 
-#### SCRIPTS AND FUNCTIONS:
+#### Scripts and Function Demos:
+The following scripts and functions can be used with the available data on Zenodo (see below):
 
 (i) `01_Evaluate-global-diffusion.ipynb`:
    - Computes the global diffusion of protein chains using translational/rotational diffusion coefficients, and radial distribution functions. 
@@ -11,6 +12,7 @@ This folder contains the main Python and Jupyter Notebook scripts (.py and .ipyn
      - Translational and rotational diffusion coefficients (computed with scripts: create_unit_vectors.py, compute_dr.py, compute_msd.py)
      - Radial distribution function (GROMACS: gmx rdf)
      - Folders containing: TPR file, Chain indices file (txt file with the indeces of each chain in the system), Temperatures
+    - Download: System 4 of P. arcticus, which includes RDF data and examples for rotational/translational diff. coeff. 
 Expected Runtime: ~30 min.
 
 (ii) `02_Translational-diffusion-blockwise.ipynb`:
@@ -19,6 +21,8 @@ Expected Runtime: ~30 min.
      - Trajectory files (.xtc)
      - Protein index file (file containing index ranges of proteins)
      - TPR file
+   - Download: System 1 of P. arcticus or other available datasets
+
 Expected Runtime: ~10 min.
 
 (iii) `03_RunContacts.ipynb`:
@@ -29,10 +33,12 @@ Expected Runtime: ~10 min.
      - TPR file
     - Note: This code is computationally expensive and runs parallel with multiprocessing. A high skipping rate of frames can be 
       selected to run this faster.
+    - Download: System 4 of P. arcticus or other available datasets.
 Expected Runtime: ~ 2h
 
-Additional analysis tools are provided in the 'source_codes' folder. These include:
+Additional analysis scripts are provided in the 'source_codes' folder. These include:
 - Scripts to create unit vectors, compute rotational diffusion coefficients, compute translational diffusion coefficients over whole trajectory
+- Functions to combine folded and unfolded diffusion coefficients, with parameters from QENS experiments.
 - Utilities for correcting diffusion coefficients for periodic boundary conditions (PBC)
 - Optimization of weighted global diffusion coefficients to fit experimental data
 
