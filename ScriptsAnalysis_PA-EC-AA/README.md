@@ -48,10 +48,10 @@ networkx: 3.4.2
 tqdm: 4.65.0  
 
 ### Demo:
-The scripts can be tested with available data on Zenodo: 
-https://zenodo.org/records/16603402
-https://zenodo.org/records/16600218
-https://zenodo.org/records/16605838
+The scripts can be tested with available data on Zenodo:   
+https://zenodo.org/records/16603402  
+https://zenodo.org/records/16600218  
+https://zenodo.org/records/16605838  
 Note: Adjust the paths in the scripts according to the downloading path and the System. The first link includes specific examples for runnning specific codes.
 
 
