@@ -50,10 +50,12 @@ def plot_Dt(org, sys, ax, unF, punf='', color='orange', label='label'):
     punf_clean = punf.replace('_', '').replace('-', '_')
 
     # Load data
+    #### USER: ADJUST THIS ACCORDING TO THE PATH ##################################################
     base_path = f"../../02a-Simulations/Systems/{org}/Subbox{sys}/"
     dt_path = f"../../02a-Simulations/Diffusion/Translational/Average_DT_blockwise/"
     DT = np.load(f"{dt_path}DT-{org}-System{sys}{punf}.npy")
     DT_err = np.load(f"{dt_path}DT-{org}-System{sys}{punf}_err.npy")
+    ###############################################################################################
 
     # Load temperature data
     Temp = np.array(find_temperatures(base_path, 'K'))
