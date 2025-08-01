@@ -1,7 +1,5 @@
 ### OVERVIEW:
 This folder contains the main Python and Jupyter Notebook scripts (.py and .ipynb) used in the article: "Cytoplasmic Fluidity and the Cold Life: Proteome Stability is Decoupled from Viability in Psychrophiles". 
-The scripts can be tested with available data on Zenodo: https://zenodo.org/records/16603402.
-Note: Adjust the paths in the scripts according to the downloading path.
 
 ### SCRIPTS AND FUNCTIONS:
 
@@ -48,5 +46,13 @@ scipy: 1.12.0
 lmfit: 1.2.2  
 networkx: 3.4.2  
 tqdm: 4.65.0  
+
+### Demo:
+The scripts can be tested with available data on Zenodo: 
+https://zenodo.org/records/16603402
+https://zenodo.org/records/16600218
+https://zenodo.org/records/16605838
+Note: Adjust the paths in the scripts according to the downloading path and the System. The first link includes specific examples for runnning specific codes.
+
 
 
