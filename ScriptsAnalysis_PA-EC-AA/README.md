@@ -33,4 +33,16 @@ Additional analysis tools are provided in the 'source_codes' folder. These inclu
 - Utilities for correcting diffusion coefficients for periodic boundary conditions (PBC)
 - Optimization of weighted global diffusion coefficients to fit experimental data
 
+### Software Dependencies:
+Python: 3.12.1
+Jupyter Notebook: 7.0.8
+MDAnalysis: 2.7.0
+numpy: 1.26.4
+pandas: 2.2.1
+matplotlib: 3.8.0
+scipy: 1.12.0
+lmfit: 1.2.2
+networkx: 3.4.2
+tqdm: 4.65.0
+
 
