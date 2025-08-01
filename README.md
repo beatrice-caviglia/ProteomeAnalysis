@@ -11,6 +11,8 @@ To install the Proteome Class and analysis scripts clone or download the reposit
 git clone https://github.com/beatrice-caviglia/ProteomeAnalysis.git  
 cd Proteome_Analysis  
 
+Installation is lightweight and should only take a few seconds.
+
 ### Usage:
 The Analysis scripts can be tested with the published data available at the following Zenodo link:   
 Scripts are provided as Jupyter Notebooks or .py files.  
