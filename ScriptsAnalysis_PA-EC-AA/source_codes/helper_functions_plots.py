@@ -197,3 +197,28 @@ def find_au_vs_ru(org, sys, color = 'black', ax = None):
     p = result.params['p'].value
 
     return p
+
+def find_ruT(au, p, T_meas, color, TCD, ax = None, label = 'QENS+MD'):
+    
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(3, 3))
+
+    # Compute ruT from experimenal au and MD parameter p
+    r_uT = np.zeros(len(T_meas))
+    for (i, t) in enumerate(T_meas):
+        r_uT[i] = au(t)**(1/p)
+        
+    ax.plot(T_meas, r_uT, '-', color = color, linewidth = 2.5, label = label)
+    ax.set_xlabel('$T$ (K)')
+    ax.set_ylabel('$r_u$(-)')
+    if ax is None:
+        ax.axvline(x=TCD, ymin=0, ymax=1, color='black')
+        plt.show()
+    
+    # Find percentage of unfolded proteins at T_CD
+    interpolator = interp1d(T_meas, r_uT, kind='linear')
+    target_value = TCD
+    r_u_at_target = interpolator(target_value)
+    print('At the cell death there are ', r_u_at_target*100, ' % of unfolded proteins' )
+
+    return r_uT
