@@ -5,23 +5,23 @@ import matplotlib as mpl
 import matplotlib.cm as cm
 from scipy.optimize import curve_fit
 
-# === Global Plot Settings ===
-tex_fonts = {
-    "text.usetex": True,
-    "font.family": "serif",
-    "axes.labelsize": 12,
-    "font.size": 12,
-    "legend.fontsize": 11,
-    "xtick.labelsize": 11,
-    "ytick.labelsize": 11
-}
-plt.rcParams.update(tex_fonts)
-plt.rcParams['axes.linewidth'] = 1.2
-plt.rcParams['lines.linewidth'] = 1.2
-mpl.rcParams['lines.markersize'] = 3
-plt.rc('text', usetex=True)
-mpl.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}'
-plt.rc('text.latex', preamble=r'\usepackage{amsmath}')
+# === Global Plot Settings === (LaTeX required)
+# tex_fonts = {
+#     "text.usetex": True,
+#     "font.family": "serif",
+#     "axes.labelsize": 12,
+#     "font.size": 12,
+#     "legend.fontsize": 11,
+#     "xtick.labelsize": 11,
+#     "ytick.labelsize": 11
+# }
+# plt.rcParams.update(tex_fonts)
+# plt.rcParams['axes.linewidth'] = 1.2
+# plt.rcParams['lines.linewidth'] = 1.2
+# mpl.rcParams['lines.markersize'] = 3
+# plt.rc('text', usetex=True)
+# mpl.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}'
+# plt.rc('text.latex', preamble=r'\usepackage{amsmath}')
 
 def plot_com_trajectories(results, outputdir, base, plot): # works
     """
