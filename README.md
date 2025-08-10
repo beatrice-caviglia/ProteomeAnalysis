@@ -14,7 +14,10 @@ cd Proteome_Analysis
 Installation is lightweight and should only take a few seconds.
 
 ### Usage:
-The Analysis scripts can be tested with the published data available at the following Zenodo link:   
+The Analysis scripts can be tested with the published data available at the following Zenodo link:
+https://zenodo.org/records/16603402  
+https://zenodo.org/records/16600218  
+https://zenodo.org/records/16605838  
 Scripts are provided as Jupyter Notebooks or .py files.  
 Adjust paths in scripts according to downloading path. Further details on scripts are provided in the Scripts_Analysis_PA_EC_AA folder.   
 A tutorial for the Proteome Class is under construction and will be made available as soon as possible.  
