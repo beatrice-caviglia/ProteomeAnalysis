@@ -9,7 +9,7 @@ This repository contains
 To install the Proteome Class and analysis scripts clone or download the repository:
 
 git clone https://github.com/beatrice-caviglia/ProteomeAnalysis.git  
-cd Proteome_Analysis  
+cd ProteomeAnalysis  
 
 Installation is lightweight and should only take a few seconds.
 
